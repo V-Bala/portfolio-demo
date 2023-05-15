@@ -1,0 +1,86 @@
+/* Style the video container */
+.video-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container + .video-container {
+  margin-top: 10px; /* add a 50 pixel gap between the two videos */
+}
+
+/* Style the video to fill the container */
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9; /* Set the opacity to 50% */
+  /*filter: grayscale(0%);*/ /* Apply a grayscale filter to the video */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  background-color: white; /* set the background color to white */
+  padding: 20px; /* add some padding to the container */
+}
+
+.image-wrapper {
+  margin: 0 10px; /* add some margin between the images */
+}
+
+.image-wrapper img {
+  max-width: 100%; /* ensure the image stays within the width of the container */
+  height: auto;
+}
+
+/* Style the container for the text */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+  /* Header styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
